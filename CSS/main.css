@@ -162,5 +162,5 @@
 
 /* Custom border thickness */
 .border-thick {
-    border-width: 8px ;
+    border-width: 8px !important;
 }
