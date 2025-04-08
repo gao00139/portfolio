@@ -1,0 +1,33 @@
+:root{
+    --bs-primary: #CFBCB1;
+    --bs-primary-rgb:207,188,177;
+    --bs-secondary:#5A4130;
+    --bs-secondary-rgb: 90,65,48;
+ 
+}
+
+/* CHANGED: Added custom color variables and navbar styling */
+.navbar {
+    background-color: var(--bs-primary); 
+}
+.navbar-brand {
+    font-weight: 700; 
+    display: flex;
+    align-items: center;
+    color: var(--bs-secondary); 
+}
+/* CHANGED: Smaller logo size */
+.navbar-brand img {
+    height: 30px; 
+    margin-right: 12px;
+}
+/* CHANGED: Increased spacing between nav items */
+.navbar-nav {
+    gap: 1.5rem; 
+}
+/* CHANGED: Nav link styling */
+.nav-link {
+    color: var(--bs-secondary);
+    font-weight: 500; 
+    padding: 0.5rem 1rem;
+}
