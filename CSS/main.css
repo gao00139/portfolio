@@ -25,61 +25,71 @@
     padding: 0;
 }
 
-.navbar-toggler-icon {
-    background-image: none !important;
-    position: relative;
-}
-
-.navbar-toggler-icon::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: var(--bs-secondary);
-    box-shadow: 0 6px 0 var(--bs-secondary), 0 12px 0 var(--bs-secondary);
-    top: 0;
-}
-
 /* Mobile navigation styles */
 @media (max-width: 991.98px) {
-    .navbar-collapse {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background: white;
-        padding: 2rem;
-        z-index: 1000;
+    #navbarOffcanvas {
+        background-color: #fff; /* White background */
+        color: var(--bs-secondary); /* Dark text */
     }
 
-    .navbar-nav {
-        height: 100%;
+    #navbarOffcanvas .offcanvas-header {
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #dee2e6; /* Add border below header */
+    }
+
+    #navbarOffcanvas .btn-close {
+        filter: none; /* Revert filter for dark close button */
+    }
+
+    #navbarOffcanvas .offcanvas-body {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 2rem !important;
+        justify-content: flex-start; /* Align items to the top */
+        align-items: flex-start; /* Align items to the left */
+        padding: 2rem;
+        text-align: left; /* Left align text */
+    }
+    
+    #navbarOffcanvas .navbar-brand-mobile {
+        color: var(--bs-secondary); /* Ensure logo text is dark */
+        align-self: center; /* Center the brand itself */
+        margin-bottom: 1.5rem; /* Add space below logo */
+        padding-bottom: 1.5rem; /* Add padding below logo */
+        border-bottom: 1px solid #dee2e6; /* Add border below logo */
+        width: 100%; /* Make brand take full width for border */
+        text-align: center; /* Center text within the brand link */
+    }
+    
+    #navbarOffcanvas .navbar-brand-mobile img {
+        margin-bottom: 0.5rem; /* Space between image and text */
     }
 
-    .nav-link {
-        font-size: 1.25rem;
+    #navbarOffcanvas .navbar-nav {
+        gap: 1.5rem !important; /* Adjust gap */
+        align-items: flex-start; /* Align nav items to the left */
+        width: 100%; /* Ensure nav takes full width */
+    }
+
+    #navbarOffcanvas .nav-link {
+        font-size: 1.1rem; /* Slightly smaller font */
         padding: 0.5rem 0;
+        color: var(--bs-secondary); /* Ensure link text is dark */
+        justify-content: flex-start; /* Align dot and text to the start */
     }
 
-    .mobile-nav-dot {
-        width: 12px;
-        height: 12px;
-        background-color: var(--bs-secondary);
+    #navbarOffcanvas .nav-link:hover,
+    #navbarOffcanvas .nav-link.active {
+        color: var(--bs-secondary);
+        opacity: 0.8;
+    }
+
+    #navbarOffcanvas .mobile-nav-dot {
+        width: 10px; /* Slightly smaller dot */
+        height: 10px;
+        background-color: var(--bs-secondary); /* Make dots dark */
         border-radius: 50%;
-        margin-right: 1rem;
-    }
-
-    .btn-close {
-        opacity: 1;
-    }
-
-    .offcanvas {
-        background-color: white;
+        flex-shrink: 0; /* Prevent dot from shrinking */
+        margin-right: 0.75rem; /* Adjust gap */
     }
 }
 
@@ -163,4 +173,53 @@
 /* Custom border thickness */
 .border-thick {
     border-width: 8px !important;
+}
+
+/* Custom form styling */
+.form-control-custom {
+    background-color: #FDF5E6; /* Old Lace - light beige */
+    border: none;
+    padding: 0.75rem 1.5rem;
+}
+
+.form-control-custom:focus {
+    background-color: #FDF5E6;
+    box-shadow: 0 0 0 0.25rem rgba(90, 65, 48, 0.25); /* bs-secondary with alpha */
+}
+
+.btn-custom-send {
+    background-color: #FDF5E6; /* Old Lace - light beige */
+    border: none;
+    color: var(--bs-secondary);
+    font-weight: bold;
+    letter-spacing: 0.2em; /* Increase letter spacing */
+    padding: 1rem 3rem; /* Increase padding for larger button */
+    border-radius: 50px; /* Large border radius for ellipse shape */
+}
+
+.btn-custom-send:hover {
+    background-color: #FAF0E6; /* Linen - slightly darker beige */
+    color: var(--bs-secondary);
+}
+
+/* Skip link styles */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Hide thick borders on large screens */
+@media (min-width: 992px) {
+    .border-thick {
+        border: none !important; 
+    }
 }

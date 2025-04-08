@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yunxia's Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+<body>
+     <!-- Skip navigation link -->
+     <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+     <!-- add Header with responsive navbar -->
+     <header role="banner">
+        <nav class="navbar navbar-expand-lg py-3" style="background-color: var(--bs-primary)">
+            <div class="container-fluid px-4">
+                <!-- Brand/logo -->
+                <a class="navbar-brand d-flex align-items-center text-secondary fs-4 fw-bold" href="index.html">
+                    <img src="images/logo/logo.jpg" alt="Logo" width="40" height="40" class="d-none d-lg-block me-2">
+                    Lens and Line
+                </a>
+
+                <!-- Mobile toggle button -->
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="offcanvas offcanvas-end w-100 h-100" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <!-- Mobile Brand/logo -->
+                        <a class="navbar-brand navbar-brand-mobile d-flex flex-column align-items-center text-secondary fs-4 fw-bold d-lg-none" href="index.html">
+                            <img src="images/logo/logo.jpg" alt="" width="40" height="40" class="mb-2">
+                            Lens and Line
+                        </a>
+                        <ul class="navbar-nav ms-auto gap-4" role="menubar">
+                            <li class="nav-item" role="none">
+                                <a class="nav-link d-flex align-items-center text-secondary" role="menuitem" href="index.html">
+                                    <span class="mobile-nav-dot d-lg-none"></span>
+                                    <span>Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link d-flex align-items-center text-secondary" href="#services" role="menuitem">
+                                    <span class="mobile-nav-dot d-lg-none"></span>
+                                    <span>Services</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link d-flex align-items-center text-secondary" href="about.html" role="menuitem" aria-current="page">
+                                    <span class="mobile-nav-dot d-lg-none"></span>
+                                    <span>About</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" role="none">
+                                <a class="nav-link d-flex align-items-center text-secondary" href="contact.html" role="menuitem">
+                                    <span class="mobile-nav-dot d-lg-none"></span>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+     </header>
+
+    <!-- add Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="main-content" class="py-5 border-top border-bottom border-secondary border-thick">
+            <div class="container">
+                <div class="row align-items-center justify-content-center gy-4">
+                    <div class="col-12 col-md-6">
+                        <img srcset="images/me/me-320x.jpg 320w,
+                                           images/me/me-720x.jpg 720w"
+                                     sizes="(max-width: 320px) 320px,
+                                            (max-width: 720px) 720px"
+                                     src="images/me/me.jpg"
+                                     alt="Yunxia Gao smiling and wearing a red sweater"
+                                     class="img-fluid rounded w-100 h-100 object-fit-cover"
+                                     style="max-height: 400px;"
+                                     role="img">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <p class="text-secondary lead">
+                            I'm Yunxia Gao, founder of Lens and Line, combining photography and design to 
+                            create meaningful visual stories. With a passion for capturing authentic moments 
+                            and building strong brand identities, I help individuals and businesses bring their vision 
+                            to life.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Statement Section -->
+        <section class="py-5 border-bottom border-secondary border-thick" aria-labelledby="about-statement-heading">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-12 col-md-6">
+                        <h2 id="about-statement-heading" class="text-secondary display-6 mb-4">About Statement</h2>
+                        <p class="text-secondary">
+                            I am a passionate photographer and designer dedicated to creating visuals that evoke emotions and build connections. My work combines professionalism with warmth, ensuring that every photo and design piece reflects authenticity and modern aesthetics. Whether it's capturing family memories, elevating a real estate listing, or designing a brand's visual identity, I strive to deliver high-quality results that resonate with my clients.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img srcset="images/about_statement/about-320x.jpg 320w,
+                                     images/about_statement/about-720x.jpg 720w"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 720px) 720px,
+                                    (min-width: 721px) 50vw"
+                             src="images/about_statement/about.jpg" 
+                             alt="Woman sitting on a cliff overlooking mountains" 
+                             class="img-fluid rounded shadow w-100" 
+                             style="max-height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement Section -->
+        <section class="py-5 border-bottom border-secondary border-thick" aria-labelledby="mission-statement-heading">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-12 col-md-6 order-md-last">
+                        <h2 id="mission-statement-heading" class="text-secondary display-6 mb-4">Mission Statement</h2>
+                        <p class="text-secondary">
+                            To capture timeless moments and craft visually compelling designs that tell authentic stories. Through professional photography and modern design, I help families, real estate professionals, and brands create visuals that are warm, engaging, and impactful.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-first">
+                        <img srcset="images/mission_statement/mission-320x.jpg 320w,
+                        images/mission_statement/mission-720x.jpg 720w"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 720px) 720px,
+                                    (min-width: 721px) 50vw"
+                             src="images/mission_statement/mission.jpg" 
+                             alt="Person standing on a mountain peak with text overlay" 
+                             class="img-fluid rounded shadow w-100" 
+                             style="max-height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision Statement Section -->
+        <section class="py-5 border-bottom border-secondary border-thick" aria-labelledby="vision-statement-heading">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-12 col-md-6">
+                        <h2 id="vision-statement-heading" class="text-secondary display-6 mb-4">Vision Statement</h2>
+                        <p class="text-secondary">
+                            To be a trusted creative partner for families, real estate professionals, and brands, helping them tell their unique stories through modern and emotionally engaging photography and design. I aim to redefine the way people experience visual storytelling, ensuring that every image and design leaves a lasting impression.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img srcset="images/vision_statement/vision-320x.jpg 320w,
+                        images/vision_statement/vision-720x.jpg 720w"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 720px) 720px"
+                             src="images/vision_statement/vision.jpg" 
+                             alt="Sun setting on a snow-capped mountain peak" 
+                             class="img-fluid rounded shadow w-100" 
+                             style="max-height: 400px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- add Contact Section -->
+        <section class="py-5" id="contact" role="region" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <a class="btn learn-more-btn rounded-pill py-3 px-5 fs-5" href="contact.html" role="button">
+                                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- add Footer -->
+    <footer class="py-5" style="background-color: var(--bs-primary);" role="contentinfo">
+        <div class="container">
+            <div class="row gy-4">
+                <!-- add Logo and Social Media -->
+                <div class="col-12 col-md-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="index.html" aria-label="Go to Homepage">
+                            <img src="images/logo/logo.jpg" alt="Lens and Line Logo" width="60" height="60" class="mb-3">
+                        </a>
+                        <a href="index.html" class="text-secondary text-decoration-none">
+                            <h3 class="h4 text-secondary mb-3">Lens and Line</h3>
+                        </a>
+                        <div class="d-flex justify-content-between w-50" aria-label="Social media links">
+                            <a href="https://www.instagram.com" class="text-secondary" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page (opens in new tab)">
+                                <i class="bi bi-instagram fs-2" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.facebook.com" class="text-secondary" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page (opens in new tab)">
+                                <i class="bi bi-facebook fs-2" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- add Contact Information -->
+                <div class="col-12 col-md-3 offset-md-1">
+                    <div class="d-flex flex-column align-items-center align-items-md-start" role="region" aria-label="Contact information">
+                        <h3 class="h4 text-secondary mb-3" id="email-heading">Email</h3>
+                        <a href="mailto:Windsor.gao.96@gmail.com" class="text-secondary text-decoration-none mb-4" aria-labelledby="email-heading">Windsor.gao.96@gmail.com</a>
+                        
+                        <h3 class="h4 text-secondary mb-3" id="phone-heading">Call</h3>
+                        <a href="tel:613-818-0906" class="text-secondary text-decoration-none" aria-labelledby="phone-heading">613 818 0906</a>
+                    </div>
+                </div>
+
+                <!-- add Navigation Links -->
+                <div class="col-12 col-md-4 offset-md-1">
+                    <nav class="d-flex flex-column align-items-center align-items-md-end" aria-label="Footer navigation">
+                        <a href="index.html" class="text-secondary text-decoration-none mb-4 h4 fw-normal" aria-current="page">Home</a>
+                        <a href="#services" class="text-secondary text-decoration-none mb-4 h4 fw-normal">Services</a>
+                        <a href="about.html" class="text-secondary text-decoration-none mb-4 h4 fw-normal">About</a>
+                        <a href="contact.html" class="text-secondary text-decoration-none h4 fw-normal">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            
+            <!-- add Copyright -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="text-secondary mb-0" role="contentinfo">&copy; 2024 Yunxia Gao. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
